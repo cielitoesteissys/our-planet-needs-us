@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our planet needs us — A world in one click</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="ocean-bg" aria-hidden="true">
+      <div class="ocean-fondo"></div>
+      <div class="light-rays"></div>
+      <div class="caustics"></div>
+    </div>
+
+    <div class="marine-decorations" aria-hidden="true">
+      <svg class="wave-decoration wave-top" viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0,50 C240,100 480,0 720,50 C960,100 1200,0 1440,50 L1440,0 L0,0 Z" fill="url(#waveGradient1)" opacity="0.35"/>
+        <defs>
+          <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#7dd3fc"/>
+            <stop offset="50%" stop-color="#a78bfa"/>
+            <stop offset="100%" stop-color="#f9a8d4"/>
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <svg class="wave-decoration wave-bottom" viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0,50 C240,0 480,100 720,50 C960,0 1200,100 1440,50 L1440,100 L0,100 Z" fill="url(#waveGradient2)" opacity="0.35"/>
+        <defs>
+          <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#f9a8d4"/>
+            <stop offset="50%" stop-color="#7dd3fc"/>
+            <stop offset="100%" stop-color="#a78bfa"/>
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <svg class="deco deco-shell-1" viewBox="0 0 100 100">
+        <path d="M50,90 C20,80 5,50 15,25 C25,5 45,5 50,25 C55,5 75,5 85,25 C95,50 80,80 50,90 Z" fill="none" stroke="#f9a8d4" stroke-width="1.5" opacity="0.6"/>
+        <path d="M50,85 L50,30 M35,75 L40,40 M65,75 L60,40 M25,60 L35,40 M75,60 L65,40" stroke="#f9a8d4" stroke-width="1" opacity="0.5" fill="none"/>
+      </svg>
+
+      <svg class="deco deco-star-1" viewBox="0 0 100 100">
+        <path d="M50,10 L60,38 L88,38 L66,56 L74,84 L50,68 L26,84 L34,56 L12,38 L40,38 Z" fill="none" stroke="#a78bfa" stroke-width="1.8" opacity="0.7"/>
+      </svg>
+
+      <svg class="deco deco-star-2" viewBox="0 0 100 100">
+        <path d="M50,10 L60,38 L88,38 L66,56 L74,84 L50,68 L26,84 L34,56 L12,38 L40,38 Z" fill="none" stroke="#7dd3fc" stroke-width="1.8" opacity="0.6"/>
+      </svg>
+
+      <div class="deco-bubble deco-bubble-1"></div>
+      <div class="deco-bubble deco-bubble-2"></div>
+      <div class="deco-bubble deco-bubble-3"></div>
+      <div class="deco-bubble deco-bubble-4"></div>
+      <div class="deco-bubble deco-bubble-5"></div>
+
+      <svg class="deco deco-seaweed-1" viewBox="0 0 60 200">
+        <path d="M30,200 Q10,150 30,100 Q50,50 30,0" fill="none" stroke="#2ecc71" stroke-width="2" opacity="0.4"/>
+        <path d="M30,200 Q50,150 30,100 Q10,50 30,0" fill="none" stroke="#2ecc71" stroke-width="1.5" opacity="0.3"/>
+      </svg>
+
+      <svg class="deco deco-coral" viewBox="0 0 100 120">
+        <path d="M50,120 L50,80 M50,80 C40,70 30,60 25,40 M50,80 C60,70 70,60 75,40 M35,60 L25,50 M65,60 L75,50 M30,50 L20,35 M70,50 L80,35" stroke="#f9a8d4" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+      </svg>
+
+      <svg class="deco deco-fish-1" viewBox="0 0 100 50">
+        <path d="M10,25 Q30,10 60,15 Q80,18 85,25 Q80,32 60,35 Q30,40 10,25 Z" fill="none" stroke="#7dd3fc" stroke-width="1.5" opacity="0.55"/>
+        <path d="M85,25 L95,15 L95,35 Z" fill="none" stroke="#7dd3fc" stroke-width="1.5" opacity="0.55"/>
+        <circle cx="25" cy="23" r="2" fill="#7dd3fc" opacity="0.7"/>
+      </svg>
+
+      <svg class="deco deco-fish-2" viewBox="0 0 100 50">
+        <path d="M90,25 Q70,10 40,15 Q20,18 15,25 Q20,32 40,35 Q70,40 90,25 Z" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.55"/>
+        <path d="M15,25 L5,15 L5,35 Z" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.55"/>
+        <circle cx="75" cy="23" r="2" fill="#a78bfa" opacity="0.7"/>
+      </svg>
+
+      <svg class="deco deco-jellyfish" viewBox="0 0 80 120">
+        <path d="M15,40 Q40,5 65,40 Q65,55 55,55 L25,55 Q15,55 15,40 Z" fill="none" stroke="#f9a8d4" stroke-width="1.5" opacity="0.6"/>
+        <path d="M25,55 Q22,80 25,110 M35,55 Q33,85 35,115 M45,55 Q47,85 45,115 M55,55 Q58,80 55,110" stroke="#f9a8d4" stroke-width="1" fill="none" opacity="0.5"/>
+      </svg>
+
+      <svg class="deco deco-shell-2" viewBox="0 0 100 100">
+        <path d="M50,90 C20,80 5,50 15,25 C25,5 45,5 50,25 C55,5 75,5 85,25 C95,50 80,80 50,90 Z" fill="none" stroke="#7dd3fc" stroke-width="1.5" opacity="0.55"/>
+        <path d="M50,85 L50,30" stroke="#7dd3fc" stroke-width="1" opacity="0.5"/>
+      </svg>
+    </div>
+
+    <div class="bubbles" id="bubbles" aria-hidden="true"></div>
+
+    <audio id="bgMusic" autoplay loop preload="auto">
+      <source src="css/js/img/audio/Mermaid's Tears   Dreamy Fantasy Study Music for Focus & Relaxation.mp3" type="audio/mpeg" />
+    </audio>
+
+    <button id="musicBtn" class="music-btn" aria-label="Toggle music">
+      <svg class="music-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M9 18V5l12-2v13" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="6" cy="18" r="3"/>
+        <circle cx="18" cy="16" r="3"/>
+      </svg>
+      <span class="music-text">Sound on</span>
+    </button>
+
+    <main class="wrapper">
+      <div class="wood-sign sign-top-left">
+        <p>Different<br />Places<br />Same Home</p>
+        <svg class="heart-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </div>
+
+      <div class="wood-sign sign-top-right">
+        <p>Healthy<br />Oceans<br />Brighter<br />Futures</p>
+        <svg class="heart-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </div>
+
+      <header class="title-block">
+        <h1 class="title-lettering">Our planet<br />needs us</h1>
+        <p class="subtitle">— A world in one click —</p>
+      </header>
+
+      <section class="collage" id="collage" aria-label="Dreamy collage of our planet"></section>
+
+      <div class="wood-sign sign-bottom">
+        <p>Together,<br />for a cleaner,<br />bluer and<br />kinder world</p>
+        <svg class="heart-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </div>
+
+      <section class="film-strip-section">
+        <h2 class="film-title">Our story in frames</h2>
+        <div class="film-strip">
+          <div class="film-track" id="filmTrack"></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="footer-line">
+          Our world
+          <svg class="mini-heart-svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          Our responsibility
+          <svg class="mini-heart-svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          Our future
+        </p>
+      </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
