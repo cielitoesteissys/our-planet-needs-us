@@ -86,9 +86,15 @@
       updateMusicControl(true);
       return true;
     } catch (error) {
+      musicText.textContent = 'Tap for sound';
       return false;
     }
   }
+
+  music.addEventListener('error', () => {
+    musicText.textContent = 'Music unavailable';
+    musicButton.setAttribute('aria-label', 'Music unavailable');
+  });
 
   const playPromise = music.play();
   if (playPromise && typeof playPromise.then === 'function') {
@@ -96,11 +102,6 @@
       .then(() => updateMusicControl(true))
       .catch(() => {
         musicText.textContent = 'Tap for sound';
-        document.addEventListener('pointerdown', () => {
-          if (music.paused) {
-            startMusic();
-          }
-        }, { once: true });
       });
   }
 
